@@ -48,10 +48,10 @@ public class LizardMan {
 				String vowelPart = vowels[rand.nextInt(vowels.length)];
 				generatedName += vowelPart;
 				double randNextSyllable = rand.nextDouble();
-				if((syllableCount > 2) && randNextSyllable < probabilityNextSyllable){
+				if((syllableCount >= 2) && randNextSyllable < probabilityNextSyllable){
 					hasNextSyllable = true;
 				}
-				else if((syllableCount >2) &&(randNextSyllable > probabilityNextSyllable)){
+				else if((syllableCount >=2) &&(randNextSyllable > probabilityNextSyllable)){
 					hasNextSyllable=false;
 				}
 				syllableCount++;
